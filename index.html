@@ -10,6 +10,7 @@
         background-color: #1e1e1e;
         font-family: monospace;
         font-size: 3em;
+        line-height: 1.2em;
         color: #cccccc;
         text-align: left;
         height: 100%;
@@ -22,11 +23,19 @@
         align-content: center;
         justify-items: center;
         height: 100%;
-        padding: 0;
-        margin: 0;
-      }
-      p {
         width: 40%;
+        padding: 0;
+        margin: 0 auto;
+      }
+      @media (max-width: 1199px) {
+        .flex-container {
+          width: 60%;
+        }
+      }
+      @media (max-width: 767px) {
+        .flex-container {
+          width: 90%;
+        }
       }
       a {
         color: #569cd6;
